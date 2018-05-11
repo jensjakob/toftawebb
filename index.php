@@ -36,7 +36,7 @@
 			</div>
 			</div>
 		</div>
-		<iframe width="100%" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBPPMOQVTT8zHWbgtRkfZLOAZzzYoA7Wb4&q=Tofta%20Webbyrå&zoom=9" allowfullscreen></iframe>
+		<iframe class="map" width="100%" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBPPMOQVTT8zHWbgtRkfZLOAZzzYoA7Wb4&q=Tofta%20Webbyrå&zoom=9" allowfullscreen></iframe>
 
 		<?php else: ?>
 			<article>
