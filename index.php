@@ -64,6 +64,7 @@
 			<div class="infobox">
 				<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?> &rarr;</a></h2>
 				<p><?php the_excerpt(); ?></p>
+				<p>➽ <a href="<?php the_permalink() ?>"><?php get_post_meta(get_the_ID(), 'cta', true); ?>...</a></p>
 			</div>
 
         <?php
