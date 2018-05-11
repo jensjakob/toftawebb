@@ -5,6 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400" rel="stylesheet">
 	<?php wp_head() ?>
+	<script>
+		function toggleMenu() {
+			var element = document.getElementById("nav-items");
+			element.classList.toggle("show");
+		}
+	</script>
 </head>
 <body>
 
@@ -41,7 +47,6 @@
 		<?php else: ?>
 			<article>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                <h1><?php the_title(); ?></h1>
                 <?php the_content(); ?>
             <?php endwhile; endif; ?>
 			</article>
@@ -65,9 +70,9 @@
         <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 		
 			<div class="infobox">
-				<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?> &rarr;</a></h2>
+				<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 				<p><?php the_excerpt(); ?></p>
-				<p>➽ <a href="<?php the_permalink() ?>"><?php get_post_meta(get_the_ID(), 'cta', true); ?>...</a></p>
+				<p>➽ <a href="<?php the_permalink() ?>"><?php echo get_post_meta(get_the_ID(), 'cta', true); ?>...</a></p>
 			</div>
 
         <?php
@@ -87,7 +92,7 @@
 			<p><strong>Tofta Webbyrå</strong><br>
 			Jakob Nanneson</p>
 			
-			<p><a href="mailto:info@toftawebb.se">info@toftawebb.se</a><br>
+			<p><a href="javascript:smae_decode('aW5mb0B0b2Z0YXdlYmIuc2U=');">info@toftawebb.se</a><br>
 			tel. 075-760 17 00</p>
 			
 			<p>➽ <strong><a href="https://toftawebb.drift.com/jakob?schedule">Boka möte</a></strong></p>
