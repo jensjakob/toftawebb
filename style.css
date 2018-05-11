@@ -1,0 +1,184 @@
+/*
+Theme Name: Anders Arborist
+Author: Jakob Nanneson, Tofta Webbyrå
+Author URI: http://toftawebb.se
+Version: 1.0
+*/
+
+html {
+    background: powderblue;
+}
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: .875em;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    background: skyblue;
+}
+#logo {
+    padding-left: .8em;
+    flex-grow: 1;
+}
+#logo img {
+    display: block;
+}
+#show-menu a {
+    display: block;
+    cursor: pointer;
+    padding: .8em;
+}
+#show-menu img {
+    display: block;
+}
+#nav-items {
+    display: none;
+    background: deepskyblue;
+}
+#nav-items.show {
+    display: block;
+}
+#nav-items ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.25em 0.5em;
+}
+#nav-items li {
+    padding: .5em 0;
+}
+#nav-items a {
+    color: white;
+    text-decoration: none;
+    padding: 0.25em 0.5em;
+}
+#top-image {
+    min-height: 300px;
+    background-image: url('http://jensplan.se/toftawebb/files/2017/10/cropped-DSC_0364.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#content {
+    width: 100%;
+    background: white;
+    flex-grow: 1;
+}
+h1 {
+    padding: 0 12px;
+    color: dodgerblue;
+}
+p {
+    line-height: 1.6em;
+    padding: 0 12px;
+}
+a.button {
+    display: inline-block;
+    background: blue;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    margin-right: 12px;
+}
+a.button.check {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjciIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAyNyAzMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPGcgaWQ9IkNhbnZhcyIgZmlsbD0ibm9uZSI+CjxwYXRoIGlkPSJjaGVjayIgZD0iTSAwIDEzLjVMIDkuNSAyM0wgMjIuNSAwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyIDIpIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjUiLz4KPC9nPgo8L3N2Zz4K');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+    padding-left: 45px;
+}
+
+.coupon {
+    margin: 12px;
+    border: 1px dashed black;
+}
+
+h2 {
+    padding: 0 12px;
+    margin-bottom: 0;
+    font-size: 20px;
+    color: dodgerblue;
+    font-weight: 300;
+}
+h2 + p {
+    margin-top: 4px;
+}
+h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+h2 a:hover {
+    color: blue;
+}
+.symbol {
+    height: 1.4em;
+    width: auto;
+    vertical-align: middle;
+}
+footer {
+    display: flex;
+}
+.by-me {
+    border-radius: 50px;
+    margin: 12px 0 0 12px;
+    width: 100px;
+    height: 100px;
+}
+@media (min-width: 426px) {
+    #navbar {
+        height: 150px;
+        align-items: flex-end;
+    }
+    #logo img {
+        width: 400px;
+    }
+    #show-menu {
+        display: none;
+    }
+    #nav-items {
+        display: block;
+    }
+    #nav-items ul {
+        padding: 15px;
+    }
+    #nav-items li {
+        display: inline;
+    }
+    #nav-items a {
+        margin: 15px;
+        padding: 15px 0 3px 0;
+    }
+    #nav-items a:hover {
+        border-bottom: 3px solid white;
+    }
+    
+    #cta-top {
+        display: flex;
+    }
+    #top-image {
+        width: 50%;
+    }
+    #cta-container {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        min-width: 385px;
+    }
+    #cta-copy {
+        max-width: 475px;
+    }
+    .boxes {
+        display: flex;
+        justify-content: center;
+    }
+    .infobox {
+        max-width: 40em;
+    }
+    footer {
+        border-top: 1px solid blue;
+        background: white;
+    }
+}
