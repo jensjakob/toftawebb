@@ -122,6 +122,9 @@ h3 {
     width: auto;
     vertical-align: middle;
 }
+.boxes {
+    border-top: 1px solid blue;
+}
 footer {
     display: flex;
 }
@@ -178,7 +181,6 @@ footer {
     .boxes {
         display: flex;
         justify-content: center;
-        border-top: 1px solid blue;
     }
     .infobox {
         max-width: 40em;
