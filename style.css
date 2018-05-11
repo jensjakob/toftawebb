@@ -58,9 +58,11 @@ body {
 }
 #top-image {
     min-height: 300px;
-    background-image: url('http://jensplan.se/toftawebb/files/2017/10/cropped-DSC_0364.jpg');
     background-position: center;
     background-size: cover;
+}
+.map {
+    display: block;
 }
 #content {
     width: 100%;
@@ -173,6 +175,7 @@ footer {
     .boxes {
         display: flex;
         justify-content: center;
+        border-top: 1px solid blue;
     }
     .infobox {
         max-width: 40em;
