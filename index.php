@@ -70,6 +70,7 @@
         <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 		
 			<div class="infobox">
+				<?php the_post_thumbnail('medium_large', ['class' => 'infobox-preview']); ?>
 				<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 				<p><?php the_excerpt(); ?></p>
 				<p>➽ <a href="<?php the_permalink() ?>"><?php echo get_post_meta(get_the_ID(), 'cta', true); ?>...</a></p>

@@ -125,6 +125,10 @@ h3 {
 .boxes {
     border-top: 1px solid blue;
 }
+.infobox-preview {
+    width: 100%;
+    height: auto;
+}
 footer {
     display: flex;
 }
