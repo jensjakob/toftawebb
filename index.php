@@ -47,27 +47,27 @@
 		<?php else: ?>
 			<article>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                <?php the_content(); ?>
-            <?php endwhile; endif; ?>
+				<?php the_content(); ?>
+			<?php endwhile; endif; ?>
 			</article>
 		<?php endif; ?>
 
 
 		<div class="boxes">
 		
-        <?php 
-        $args = array(
-            'post_type' => 'page',
-            'orderby' => 'menu_order',
+		<?php 
+		$args = array(
+			'post_type' => 'page',
+			'orderby' => 'menu_order',
 			'order' => 'asc',
 			'post_parent' => 0,
 			'posts_per_page' => 3,
 			'offset' => 1
-        );
-        
-        $the_query = new WP_Query( $args );
-        ?>
-        <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+		);
+		
+		$the_query = new WP_Query( $args );
+		?>
+		<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 		
 			<div class="infobox">
 				<?php the_post_thumbnail('medium_large', ['class' => 'infobox-preview']); ?>
@@ -76,9 +76,9 @@
 				<p>➽ <a href="<?php the_permalink() ?>"><?php echo get_post_meta(get_the_ID(), 'cta', true); ?>...</a></p>
 			</div>
 
-        <?php
-        endwhile;
-        wp_reset_postdata();
+		<?php
+		endwhile;
+		wp_reset_postdata();
 		?>
 		
 		</div>
