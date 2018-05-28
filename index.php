@@ -87,7 +87,7 @@
 	
 	<footer>
 			
-		<img class="by-me" src="<?php echo get_bloginfo('stylesheet_directory'); ?>/jakob.jpg" alt="" width="150" height="150" />
+		<img class="by-me" src="<?php echo get_bloginfo('stylesheet_directory'); ?>/jakob.jpg" alt="Jakob Nanneson" width="150" height="150" />
 			
 		<div class="footer-text">
 			<p><strong>Tofta Webbyrå</strong><br>
