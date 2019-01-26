@@ -1,5 +1,8 @@
 <?php
-wp_enqueue_style( 'style', get_stylesheet_uri() );
+function load_css_and_js() {
+    wp_enqueue_style( 'style', get_stylesheet_uri() );
+}
+add_action( 'wp_enqueue_scripts', 'load_css_and_js' );
 
 function register_my_menu() {
     register_nav_menu('header-menu',__( 'Header Menu' ));
