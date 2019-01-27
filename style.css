@@ -3,7 +3,7 @@ Theme Name: Tofta Webbyrå
 Author: Jakob Nanneson, Tofta Webbyrå
 Author URI: http://toftawebb.se
 GitHub Theme URI: https://github.com/jensjakob/toftawebb
-Version: 1.1
+Version: 1.2
 */
 
 html {
@@ -11,12 +11,12 @@ html {
 }
 body {
 	font-family: 'Libre Franklin', sans-serif;
-	margin: 0;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 	font-size: .875em;
-	max-width: 1440px;
+	max-width: 1024px;
 }
 #navbar {
 	display: flex;
@@ -65,6 +65,10 @@ body {
 }
 .map {
 	display: block;
+}
+.feat-img {
+	width: 100%;
+	height: auto;
 }
 #content {
 	width: 100%;
@@ -187,6 +191,14 @@ footer {
 	#cta-copy {
 		max-width: 475px;
 	}
+	.feat-img {
+		width: 40%;
+		float: left;
+	} 
+	article {
+		display: inline-block;
+		width: 60%;	
+	} 
 	.boxes {
 		display: flex;
 		justify-content: center;

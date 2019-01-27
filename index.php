@@ -44,14 +44,6 @@
 		</div>
 		<iframe class="map" width="100%" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBPPMOQVTT8zHWbgtRkfZLOAZzzYoA7Wb4&q=Tofta%20Webbyrå&zoom=9" allowfullscreen></iframe>
 
-		<?php else: ?>
-			<article>
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<?php the_content(); ?>
-			<?php endwhile; endif; ?>
-			</article>
-		<?php endif; ?>
-
 
 		<div class="boxes">
 		
@@ -82,6 +74,15 @@
 		?>
 		
 		</div>
+
+		<?php else: ?>
+			<?php the_post_thumbnail('medium_large', ['class' => 'feat-img']); ?>
+			<article>
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<?php the_content(); ?>
+			<?php endwhile; endif; ?>
+			</article>
+		<?php endif; ?>
 
 	</div>
 	
