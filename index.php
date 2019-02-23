@@ -15,7 +15,7 @@
 <body>
 
 	<div id="navbar">
-		<div id="logo"><a href="/"><img width="200" src="<?php echo get_bloginfo('stylesheet_directory'); ?>/logo_tofta_webbyra_white.png" alt="🚐 Tofta Webbyrå" /></a></div>
+		<div id="logo"><a href="/"><img width="200" src="<?php echo get_bloginfo('stylesheet_directory'); ?>/logo_toftawebb_white.png" alt="🚐 Tofta Webbyrå" /></a></div>
 		<div id="show-menu"><a href="#" onClick="toggleMenu()"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPGcgZmlsbD0ibm9uZSI+CjxwYXRoIGQ9Ik0gMCAwTCAyNSAwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDIxKSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSI1Ii8+CjxwYXRoIGQ9Ik0gMCAwTCAyNSAwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDEyKSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSI1Ii8+CjxwYXRoIGQ9Ik0gMCAwTCAyNSAwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMpIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjUiLz4KPC9nPgo8L3N2Zz4K" /></a></div>
 	</div>
 
