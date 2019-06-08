@@ -1,4 +1,6 @@
 <?php
+add_filter( 'xmlrpc_enabled', '__return_false' );
+
 function load_css_and_js() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
 }
